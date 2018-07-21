@@ -1,3 +1,5 @@
+[Development Environment](#setup-enlighterjs-development-environment) | [Highlighting-Engine](#highlighting-engine-and-symbols) | [Language Development](#language-development) | [Theme Development](#theme-development)
+
 Developer Guide
 ===============
 
