@@ -8,6 +8,7 @@ EnlighterJS3 Documentation
 Index
 -------------
 
+* [Tweaks + Advanced Settings](Tweaks.md)
 * [Developer Guide](DeveloperGuide.md)
 
 Related
