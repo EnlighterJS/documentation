@@ -1,5 +1,3 @@
-[Development Environment](#setup-enlighterjs-development-environment) | [Highlighting-Engine](#highlighting-engine-and-symbols) | [Language Development](#language-development) | [Theme Development](#theme-development)
-
 Developer Guide
 ===============
 
@@ -7,8 +5,8 @@ Index
 ----------------
 
 * [Highlighting-Engine and Symbol](TokenSymbols.md)
-* [Theme Development]()
-* [Language Development]()
+* [Theme Development](#theme-development)
+* [Language Development](#language-development)
 
 Setup EnlighterJS Development Environment
 ------------------------------------------
@@ -106,6 +104,15 @@ Language Development
 
 Language names are always **lowercase**, consists of **letters and numbers** and **start with a letter**
 
+### Examples ####
+
+* **cpp** :heavy_check_mark:
+* **rust** :heavy_check_mark:
+* **c++** :x:
+* **c-sharp** :x:
+* **c#** :x:
+* **visual-basic** :x:
+* **visualbasic** :heavy_check_mark:
 
 Theme Development
 -----------------
@@ -115,3 +122,12 @@ Theme Development
 ### Naming Scheme ###
 
 Theme names are always **lowercase**, consists of **letters and numbers** and **start with a letter**
+
+### Examples ####
+
+* **mytheme** :heavy_check_mark:
+* **xtheme01** :heavy_check_mark:
+* **lalala-theme** :x:
+* **MY_ULTRA_THEME** :x:
+* **00_MY_ULTRA_THEME** :x:
+* **123456** :x:
