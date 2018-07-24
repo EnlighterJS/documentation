@@ -3,7 +3,7 @@ Tweaks + Advanced Settings
 
 ## Introduction ##
 
-You can change the options globally via `.enlighter-default` class (added to all containers) or on theme basis by using the specific `.enlighter-t-<themename>` class.
+You can change all CSS related options globally via `.enlighter-default` class (added to all containers) or on per theme basis by using the specific `.enlighter-t-<themename>` classes.
 
 ## Hide Toolbar Buttons ##
 
