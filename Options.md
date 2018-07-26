@@ -6,6 +6,8 @@ EnlighterJS provides two mechanisms to pass options to the highlighting engine:
 * Javascript options (global scope)
 * HTML Data Attributes (local scope)
 
+Please keep in mind that these mechanisms are **not coherent** - each of them contains some special options which are only valid in the attribute scope or as javascript option
+
 ## Priorities ##
 
 The 3 different types of options (defaults, js options, html attributes) are merged to from the **individual** element configuration
@@ -213,19 +215,135 @@ EnlighterJS.enlight(myElement, {
 })
 ```
 
-
-
-
-
-
-
-
-
-
-
-* **language** - (string) The default language used if no `data-enlighter-language` attibutes are used - default: **"generic"**
-* **theme** - (string) The default theme used if no `data-enlighter-theme` attibutes are used - default: **"enlighter"**
-* **indent** - (integer) Number of spaces to replace tabs with (-1 means no replacement) - default: **4**
-
 ## HTML Attribute Options (local) ##
 
+EnlighterJS uses HTML5 data attribute to recognize element related options. These options have the **highest** priority and will override the javascript based ones!
+
+
+### ::data-enlighter-language ###
+* Description: sets the language support file which should be used to highlight the code
+* Type: `string`
+* Default: `generic`
+* Scope: `ALL`
+
+**Example**
+
+```html
+<!-- highlight rust code !-->
+<pre data-enlighter-language="rust">
+....
+</pre>
+```
+
+### ::data-enlighter-theme ###
+
+* Description: sets the theme (css class) which should be used to display the highlighted code
+* Type: `string`
+* Default: `enlighter`
+* Scope: `ALL`
+
+**Example**
+
+```html
+<!-- set theme to "atomic" - may usefull to use different codeblock styles within your page !-->
+<pre data-enlighter-theme="atomic">
+....
+</pre>
+```
+
+### ::data-enlighter-layout ###
+
+* Description: selects the **JSX** based **View-Model** to render+display the highlighted code (adds outer wrapper and invokes the renderer)
+* Type: `String`
+* Default: `standard`
+* Scope: `ALL`
+
+```html
+<!-- use a custom layout to highlight the code !-->
+<pre data-enlighter-layout="myCustomlayout">
+....
+</pre>
+```
+
+### ::data-enlighter-highlight ###
+
+* Description: highlights a set of lines of the current codeblock. comma-separated sets and ranges are allowed
+* Type: `string`
+* Default: `<empty>`
+* Scope: `view:standard,codegroup`
+
+```html
+<!-- highlight the line 4,10,11,12 !-->
+<pre data-enlighter-highlight="4,10-12">
+....
+</pre>
+```
+
+### ::data-enlighter-linenumbers ###
+
+* Description: show linenumbers (`ol` container is used instead of `ul`)
+* Type: `boolean`
+* Default: `true`
+* Scope: `view:standard,codegroup`
+
+```html
+<!-- disable line numbers !-->
+<pre data-enlighter-linenumbers="false">
+....
+</pre>
+```
+
+### ::data-enlighter-lineoffset ###
+
+* Description: sets the line-offset (initial line number) of the `ol` container
+* Type: `int`
+* Default: `0`
+* Scope: `view:standard,codegroup`
+
+```html
+<!-- set start of line-counter to 343 !-->
+<pre data-enlighter-lineoffset="343">
+....
+</pre>
+```
+
+### ::data-enlighter-title ###
+
+* Description: sets the tabpane title of a codegroup (view: `codegroup`)
+* Type: `int`
+* Default: `0`
+* Scope: `view:codegroup`
+
+```html
+<!-- sets the title to "My Java Snippet" !-->
+<pre data-enlighter-title="My Java Snippet" data-enlighter-group="g1">
+....
+</pre>
+```
+
+### ::data-enlighter-group ###
+
+* Description: sets the codegroup identifier to automatically group elements in case `EnlighterJS.init` is used
+* Type: `string`
+* Default: `EMPTY`
+* Scope: `EnlighterJS.init`
+
+```html
+<!-- codegroup 1 !-->
+<pre data-enlighter-title="My Java Snippet" data-enlighter-group="g1">
+....
+</pre>
+<pre data-enlighter-title="My CSS Snippet" data-enlighter-group="g1">
+....
+</pre>
+
+<p>Lorem ipsum..</p>
+
+<!-- codegroup 2 !-->
+<pre data-enlighter-title="My PHP Snippet" data-enlighter-group="myGroup2">
+....
+</pre>
+<pre data-enlighter-title="My CSS Snippet" data-enlighter-group="myGroup2">
+....
+</pre>
+```
