@@ -1,12 +1,33 @@
 EnlighterJS Options/Configuration
 =====================================
 
-EnlighterJS provides two mechanisms to pass options to the highlighting engine:
+EnlighterJS provides two mechanisms to pass options to the highlighting engine.
 
-* Javascript options (global scope)
-* HTML Data Attributes (local scope)
+Please keep in mind that these mechanisms are **not coherent** - each of them contains some special options which are only valid in the attribute scope or as javascript option!
 
-Please keep in mind that these mechanisms are **not coherent** - each of them contains some special options which are only valid in the attribute scope or as javascript option
+### Javascript options (global scope) ###
+
+* [language](#language)
+* [theme](#theme)
+* [indent](#indent)
+* [linehover](#linehover)
+* [linenumbers](#linenumbers)
+* [lineoffset](#lineoffset)
+* [highlight](#highlight)
+* [rawcodeDbclick](#rawcodeDbclick)
+* [layout](#layout)
+* [ampersandCleanup](#ampersandCleanup)
+
+### HTML Data Attributes (local scope) ###
+
+* [data-enlighter-language](#data-enlighter-language)
+* [data-enlighter-theme](#data-enlighter-theme)
+* [data-enlighter-layout](#data-enlighter-layout)
+* [data-enlighter-highlight](#data-enlighter-highlight)
+* [data-enlighter-linenumbers](#data-enlighter-linenumbers)
+* [data-enlighter-lineoffset](#data-enlighter-lineoffset)
+* [data-enlighter-title](#data-enlighter-title)
+* [data-enlighter-group](#data-enlighter-group)
 
 ## Priorities ##
 
