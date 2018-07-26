@@ -23,6 +23,8 @@ The following options can be passed to Enlighter during the initialization via j
 * `EnlighterJS.enlighte(el:DOMElement, options:Object)`
 * `EnlighterJS.init(blockSelector:String, inlineSelector:String, options:Object)`
 
+-----------------------------------
+
 ### ::language ###
 
 * Description: sets the language support file which should be used to highlight the code
@@ -41,6 +43,8 @@ EnlighterJS.enlight(myElement, {
 })
 ```
 
+-----------------------------------
+
 ### ::theme ###
 
 * Description: sets the theme (css class) which should be used to display the highlighted code
@@ -56,6 +60,8 @@ EnlighterJS.enlight(myElement, {
     theme: 'bootstrap4'
 })
 ```
+
+-----------------------------------
 
 ### ::indent ###
 
@@ -81,6 +87,7 @@ EnlighterJS.enlight(myElement, {
 })
 ```
 
+-----------------------------------
 
 ### ::linehover ###
 
@@ -99,6 +106,8 @@ EnlighterJS.enlight(myElement, {
 })
 ```
 
+-----------------------------------
+
 ### ::linenumbers ###
 
 * Description: show linenumbers (`ol` container is used instead of `ul`)
@@ -116,6 +125,8 @@ EnlighterJS.enlight(myElement, {
 })
 ```
 
+-----------------------------------
+
 ### ::lineoffset ###
 
 * Description: sets the line-offset (initial line number) of the `ol` container
@@ -132,6 +143,8 @@ EnlighterJS.enlight(myElement, {
     theme: 'bootstrap4'
 })
 ```
+
+-----------------------------------
 
 ### ::highlight ###
 
@@ -159,6 +172,9 @@ EnlighterJS.enlight(myElement, {
 })
 ```
 
+-----------------------------------
+
+
 ### ::rawcodeDbclick ###
 
 * Description: toggle raw-code pane on doubleclick the current code
@@ -173,6 +189,9 @@ EnlighterJS.enlight(myElement, {
     rawcodeDbclick: true
 })
 ```
+
+-----------------------------------
+
 
 ### ::layout ###
 
@@ -200,6 +219,8 @@ EnlighterJS.enlight(myInlineElement, {
 })
 ```
 
+-----------------------------------
+
 ### ::ampersandCleanup ###
 
 * Description: converts the escape sequence `&amp;` to `&` before highlighting the code (should be enabled)
@@ -215,10 +236,13 @@ EnlighterJS.enlight(myElement, {
 })
 ```
 
+-----------------------------------
+
 ## HTML Attribute Options (local) ##
 
 EnlighterJS uses HTML5 data attribute to recognize element related options. These options have the **highest** priority and will override the javascript based ones!
 
+-----------------------------------
 
 ### ::data-enlighter-language ###
 * Description: sets the language support file which should be used to highlight the code
@@ -234,6 +258,8 @@ EnlighterJS uses HTML5 data attribute to recognize element related options. Thes
 ....
 </pre>
 ```
+
+-----------------------------------
 
 ### ::data-enlighter-theme ###
 
@@ -251,6 +277,8 @@ EnlighterJS uses HTML5 data attribute to recognize element related options. Thes
 </pre>
 ```
 
+-----------------------------------
+
 ### ::data-enlighter-layout ###
 
 * Description: selects the **JSX** based **View-Model** to render+display the highlighted code (adds outer wrapper and invokes the renderer)
@@ -264,6 +292,8 @@ EnlighterJS uses HTML5 data attribute to recognize element related options. Thes
 ....
 </pre>
 ```
+
+-----------------------------------
 
 ### ::data-enlighter-highlight ###
 
@@ -279,6 +309,8 @@ EnlighterJS uses HTML5 data attribute to recognize element related options. Thes
 </pre>
 ```
 
+-----------------------------------
+
 ### ::data-enlighter-linenumbers ###
 
 * Description: show linenumbers (`ol` container is used instead of `ul`)
@@ -292,6 +324,8 @@ EnlighterJS uses HTML5 data attribute to recognize element related options. Thes
 ....
 </pre>
 ```
+
+-----------------------------------
 
 ### ::data-enlighter-lineoffset ###
 
@@ -307,6 +341,8 @@ EnlighterJS uses HTML5 data attribute to recognize element related options. Thes
 </pre>
 ```
 
+-----------------------------------
+
 ### ::data-enlighter-title ###
 
 * Description: sets the tabpane title of a codegroup (view: `codegroup`)
@@ -320,6 +356,8 @@ EnlighterJS uses HTML5 data attribute to recognize element related options. Thes
 ....
 </pre>
 ```
+
+-----------------------------------
 
 ### ::data-enlighter-group ###
 
