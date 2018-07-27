@@ -82,9 +82,8 @@ EnlighterJS.enlight([myElement1, myElement2, myElement3]);
 
 ## ::init ##
 
-Syntax: `EnlighterJS.init([blockSelector:String, [inlineSelector:String, [options:Object, [views:Object]]]])`
-
-The `EnlighterJS.init` methods is a simple
+* Description: The `EnlighterJS.init` method is the easiest way to apply syntax highlighting to your page! Just call the method within your footer javascript code and all selected elements (CSS selectors) will be transformed into highlighed code!
+* Syntax: `EnlighterJS.init([blockSelector:String, [inlineSelector:String, [options:Object, [views:Object]]]])`
 
 ### [arg0] blockSelector:string ###
 
