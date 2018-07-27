@@ -8,6 +8,8 @@ EnlighterJS3 Documentation
 Index
 -------------
 
+* [Integration](Integration.md)
+* [Initialization](Initialization.md)
 * [Configuration and Options](Options.md)
 * [Tweaks + Advanced Settings](Tweaks.md)
 * [Developer Guide](DeveloperGuide.md)
