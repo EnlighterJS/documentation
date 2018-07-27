@@ -4,7 +4,7 @@ Developer Guide
 Index
 ----------------
 
-* [Highlighting-Engine and Symbol](TokenSymbols.md)
+* [Highlighting-Engine and Symbol](HighlightingEngine_and_Symbols.md)
 * [Theme Development](#theme-development)
 * [Language Development](#language-development)
 
