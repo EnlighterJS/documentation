@@ -8,11 +8,12 @@ EnlighterJS3 Documentation
 Index
 -------------
 
+* [Mode of Operation](Mode_of_Operation.md) - how EnlighterJS works
 * [Integration](Integration.md) - add EnlighterJS to your website
 * [Configuration and Options](Options.md) - configure EnlighterJS
 * [Methods/API](Methods_and_API.md) - advanced use cases
 * [FAQ](FAQ.md) - Frequently Asked Questions
-* [Tweaks + Advanced Settings](Tweaks.md) - change EnlighterJS appearance
+* [Tweaks + Advanced Settings](Tweaks.md) - change EnlighterJS visual appearance (low level)
 * [Developer Guide](DeveloperGuide.md) - add new themes and languages
 
 Related
