@@ -14,6 +14,7 @@ Please keep in mind that these mechanisms are **not coherent** - each of them co
 * [linenumbers](#linenumbers)
 * [lineoffset](#lineoffset)
 * [highlight](#highlight)
+* [textOverflow](#textOverflow)
 * [rawcodeDbclick](#rawcodeDbclick)
 * [layout](#layout)
 * [ampersandCleanup](#ampersandCleanup)
@@ -51,6 +52,7 @@ The following options can be passed to Enlighter during the initialization via j
 * Description: sets the language support file which should be used to highlight the code
 * Type: `string`
 * Default: `generic`
+* Operation: internal
 
 **Example**
 
@@ -71,6 +73,7 @@ EnlighterJS.enlight(myElement, {
 * Description: sets the theme (css class) which should be used to display the highlighted code
 * Type: `string`
 * Default: `enlighter`
+* Operation: css flag
 
 **Example**
 
@@ -89,6 +92,7 @@ EnlighterJS.enlight(myElement, {
 * Description: replaces tabs within the code with `n` spaces - recommended to avoid invalid indentations
 * Type: `int`
 * Default: `4`
+* Operation: internal
 
 **Example 1**
 
@@ -115,6 +119,7 @@ EnlighterJS.enlight(myElement, {
 * Description: highlight code lines on-hover
 * Type: `boolean`
 * Default: `true`
+* Operation: css flag
 
 **Example**
 
@@ -134,6 +139,7 @@ EnlighterJS.enlight(myElement, {
 * Description: show linenumbers (`ol` container is used instead of `ul`)
 * Type: `boolean`
 * Default: `true`
+* Operation: css flag
 
 **Example**
 
@@ -153,6 +159,7 @@ EnlighterJS.enlight(myElement, {
 * Description: sets the line-offset (initial line number) of the `ol` container
 * Type: `int`
 * Default: `0`
+* Operation: css style
 
 **Example**
 
@@ -172,6 +179,7 @@ EnlighterJS.enlight(myElement, {
 * Description: highlights a set of lines of the current codeblock. comma-separated sets and ranges are allowed
 * Type: `string`
 * Default: `<empty>`
+* Operation: internal
 
 **Example 1**
 
@@ -195,12 +203,32 @@ EnlighterJS.enlight(myElement, {
 
 -----------------------------------
 
+### ::textOverflow ###
+
+* Description: sets the text overflow mode (break line or horizontal scroll)
+* Type: `string`
+* Default: `break`
+* Scope: `view:standard,codegroup`
+* Operation: css flag
+
+**Example 1**
+
+```js
+// enable horizontal scroll
+EnlighterJS.enlight(myElement, {
+    textOverflow: 'scroll'
+})
+```
+
+-----------------------------------
+
 
 ### ::rawcodeDbclick ###
 
 * Description: toggle raw-code pane on doubleclick the current code
 * Type: `boolean`
 * Default: `false`
+* Operation: internal
 
 **Example**
 
@@ -219,6 +247,7 @@ EnlighterJS.enlight(myElement, {
 * Description: selects the **JSX** based **View-Model** to render+display the highlighted code (adds outer wrapper and invokes the renderer)
 * Type: `String`
 * Default: `standard`
+* Operation: internal
 
 **Example 1**
 
@@ -247,6 +276,7 @@ EnlighterJS.enlight(myInlineElement, {
 * Description: converts the escape sequence `&amp;` to `&` before highlighting the code (should be enabled)
 * Type: `boolean`
 * Default: `true`
+* Operation: internal
 
 **Example**
 
