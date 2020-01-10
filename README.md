@@ -5,16 +5,31 @@ EnlighterJS3 Documentation
 
 **EnlighterJS, an open source syntax highlighter written in pure javascript**
 
-Index
--------------
+EnlighterJS on your Website
+-----------------------------
 
 * [Mode of Operation](Mode_of_Operation.md) - how EnlighterJS works
 * [Integration](Integration.md) - add EnlighterJS to your website
-* [Configuration and Options](Options.md) - configure EnlighterJS
-* [Methods/API](Methods_and_API.md) - advanced use cases
 * [FAQ](FAQ.md) - Frequently Asked Questions
+
+EnlighterJS editing plugins
+-----------------------------
+
+* [TinyMCE](editing/TinyMCE.md)  - Howto add code snippets via TinyMCE WYSIWYG editor
+* [Gutenberg](editing/Gutenberg.md)  - Howto add code snippets via WordPress Gutenberg editor
+
+EnlighterJS CMS Integration
+-----------------------------
+
+* [Enlighter WordPress Plugin](wordpress/) - use EnlighterJS with WordPress - includes full visual editor integration
+
+For Developers
+---------------
+
+* [Developer Guide](development/README.md) - add new themes and languages
+* [Configuration and Options](development/Options.md) - configure EnlighterJS
+* [Methods/API](development/Methods_and_API.md) - advanced use cases
 * [Tweaks + Advanced Settings](Tweaks.md) - change EnlighterJS visual appearance (low level)
-* [Developer Guide](DeveloperGuide.md) - add new themes and languages
 
 Related
 -------------
@@ -30,9 +45,8 @@ EnlighterJS is OpenSource and managed on [GitHub](https://github.com/EnlighterJS
 To simplify the release and quality control process, please follow these remarks:
 
 1. **One Enhancement** _==>_ **One Commit** (don't merge a bunch of changes in a single commit!)
-2. Only commit changes to the `src/` or `examples/` directory. Otherwise your request will be rejected
-3. Discuss larger project changes with the Maintainer **before implementing**
-4. Use GitHub for question, bugreports and discussions
+2. Discuss larger project changes with the Maintainer **before implementing**
+3. Use GitHub for question, bugreports and discussions
 
 License
 ----------------------------
