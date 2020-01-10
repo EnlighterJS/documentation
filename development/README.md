@@ -5,8 +5,8 @@ Index
 ----------------
 
 * [Highlighting-Engine and Symbol](HighlightingEngine_and_Symbols.md)
-* [Configuration and Options](development/Options.md) - configure EnlighterJS
-* [Methods/API](development/Methods_and_API.md) - advanced use cases
+* [Configuration and Options](Options.md) - configure EnlighterJS
+* [Methods/API](Methods_and_API.md) - advanced use cases
 * [Theme Development](#theme-development)
 * [Language Development](#language-development)
 
