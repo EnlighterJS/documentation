@@ -3,6 +3,8 @@ TinyMCE Visual Editor Integration
 
 ## Frontend ##
 
+Please remember that the frontend editor usage is restricted to logged-in users with editing capabilities for post+pages (admin+manager) by default - to change that behaviour you can simply use the filter hook [enlighter_frontend_editing](FilterHooks.md#filterenlighter_frontend_editing)
+
 ### Automatic Integration ###
 
 The automatic integration requires the following conditions:
@@ -11,6 +13,10 @@ The automatic integration requires the following conditions:
 2. The editor has to be added via the standard [wp_editor](https://codex.wordpress.org/Function_Reference/wp_editor) function
 3. The first toolbar is not overridden with custom settings
 4. Frontend editing is limited to users with the standard WordPress permissions `edit_post` or `edit_pages`. You can change this security condition by invoking the filter enlighter_frontend_editing
+
+### bbPress Integration ###
+
+see [bbPress](bbPress.md)
 
 ### Manual Integration ###
 

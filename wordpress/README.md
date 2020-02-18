@@ -13,12 +13,18 @@ Editing
 
 * [Enlighter Gutenberg Usage](../editing/Gutenberg.md) - Howto add Code Snippets to your posts and pages
 * [Enlighter Visual Editor Usage](../editing/TinyMCE.md) - Howto add Code Snippets to your posts and pages
-* [Enlighter Markdown Usage](Markdown.md) - Use [GFM](https://help.github.com/articles/creating-and-highlighting-code-blocks/) style fenced codeblocks
+* [Enlighter Markdown Usage]../editing/Markdown.md) - Use [GFM](https://help.github.com/articles/creating-and-highlighting-code-blocks/) style fenced codeblocks
 * [Enlighter Visual Editor Live-Demo](https://tinymce.enlighterjs.org/)
+
+Third Party Plugins
+---------------------------------
+
+* [bbPress Visual Editor Integration](bbPress.md)
 
 Documentation
 ---------------------------------
 
+* [Enlighter Plugin Notifications](PluginNotifications.md)
 * [Frequently Asked Questions](FAQ.md)
 
 WordPress Developers

@@ -1,7 +1,7 @@
-Enlighter Markdown Tutorial
+WordPress Enlighter Markdown Tutorial
 =====================================
 
-Enlighter comes with extended **github flavored markdown** support which allows you to used fenced codeblocks as well as backtick inline code within text-editor.
+The Enlighter WordPress plugin comes with extended **github flavored markdown** support which allows you to used fenced codeblocks as well as backtick inline code within text-editor.
 
 This is an optional feature which has to be enabled on the Enlighter Settings Page: `Enlighter -> Editing -> Markdown`
 
@@ -64,4 +64,3 @@ Standard inline code does not allow you to set the language. In this case the de
 **Syntax:** `` `code` ``
 
 **Example:** `` `console.info('Hello World');` ``
-
