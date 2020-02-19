@@ -51,8 +51,8 @@ FILTER::enlighter_languages
 
 ```php
 function mm_ejs_languages($langs){
-    unset $langs['Java'];
-    unset $langs['Javascript'];
+    unset($langs['Java']);
+    unset($langs['Javascript']);
     return $langs;
 }
 
