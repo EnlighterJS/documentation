@@ -21,6 +21,11 @@ Third Party Plugins
 
 * [bbPress Visual Editor Integration](bbPress.md)
 
+Compatibility
+---------------------------------
+
+* [WordPress Theme Compatibility](WPThemeCompatibility.md)
+
 Documentation
 ---------------------------------
 
