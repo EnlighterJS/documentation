@@ -15,31 +15,36 @@ FILTER::enlighter_themes
 #### Example 1 - Remove a Single Theme ####
 
 ```php
-function mm_ejs_themes($themes){
-    unset $themes['Classic'];
-    return $themes;
-}
-
 // add a custom filter to modify the theme list
-add_filter('enlighter_themes', 'mm_ejs_themes');
+add_filter('enlighter_themes', function($themes){
+    // DEBUG: just display the dataset - uncomment the following line to debug issues
+    // echo '<pre>', print_r($themes, true), '</pre>';
+
+    // unset the theme
+    unset($themes['godzilla']);
+
+    return $themes;
+});
 ```
 
 #### Example 2 - Set a Explicit Theme List ####
 
 ```php
-function mm_ejs_themes($themes){
+// add a custom filter to modify the theme list
+add_filter('enlighter_themes', function ($themes){
+    // DEBUG: just display the dataset - uncomment the following line to debug issues
+    // echo '<pre>', print_r($themes, true), '</pre>';
+
     // just show the Classic + Enlighter Theme 
     // Add a new custom theme named my_c_theme - shown as 'MyCustom Lalala Themes' in select boxes
     // Note: Custom themes CSS has to be loaded separately
     return array(
-         'Classic' => 'classic',
-         'Enlighter' => 'enlighter'
-         'MyCustom Lalala Themes' => 'my_c_theme'
+        'enlighter' => 'Enlighter',
+        'godzilla' => 'Godzilla',
+        'beyond' => 'Beyond',
+        'classic' => 'Classic'
      );
-}
-
-// add a custom filter to modify the theme list
-add_filter('enlighter_themes', 'mm_ejs_themes');
+});
 ```
 
 FILTER::enlighter_languages
@@ -50,40 +55,35 @@ FILTER::enlighter_languages
 #### Example 1 - Remove some Languages ####
 
 ```php
-function mm_ejs_languages($langs){
-    unset($langs['Java']);
-    unset($langs['Javascript']);
-    return $langs;
-}
+
 
 // add a custom filter to modify the language list
-add_filter('enlighter_languages', 'mm_ejs_languages');
+add_filter('enlighter_languages', function($langs){
+    // DEBUG: just display the dataset - uncomment the following line to debug issues
+    // echo '<pre>', print_r($langs, true), '</pre>';
+
+    unset($langs['java']);
+    unset($langs['javascript']);
+    return $langs;
+});
 ```
 
-#### Example 2 - Add Custom language files ####
+#### Example 2 - Add Custom languages ####
 
 ```php
-function mm_ejs_languages($langs){
+// add a custom filter to modify the language list
+add_filter('enlighter_languages', function ($langs){
     // Add a new custom language named mylang - shown as 'MyCustom Lalala Lang' in select boxes
     // Note: Custom language JS has to be loaded separately
     return array(
-        'MyCustom Lalala Lang' => 'mylang',
+         'mylang'=> 'MyCustom Lalala Lang',
         
         // html, css, js
-        'JS' => 'js',
-        'HTML5' => 'html',
-        'CSS' => 'css'
+        'js' => 'Javascript',
+        'html5' => 'HTML v5',
+        'css' => 'CSS'
     );
-}
-
-// add a custom filter to modify the language list
-add_filter('enlighter_languages', 'mm_ejs_languages');
-
-// add external language file
-function mm_add_custom_ejs_lang() {
-    wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/js/custom_ejs_language.js');
-}
-add_action('wp_enqueue_scripts', 'mm_add_custom_ejs_lang');
+});
 ```
 
 
@@ -95,12 +95,10 @@ FILTER::enlighter_resource_url
 #### Example 1 - Move Resources to CDN ####
 
 ```php
-function mm_ejs_resources($resourceName){
+// add a custom filter to modify the resource url's
+add_filter('enlighter_resource_url', function ($resourceName){
     return 'https://mycdn.mydomain.tld/wp-enlighter/' . $resourceName;
 }
-
-// add a custom filter to modify the resource url's
-add_filter('enlighter_resource_url', 'mm_ejs_resources');
 ```
 
 

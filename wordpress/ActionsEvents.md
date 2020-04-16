@@ -4,7 +4,7 @@ Actions and Events
 EVENT::enlighter_init
 ------------------------------------------------------
 
-**Description:** Triggered after Plugin initialization
+**Description:** Triggered after Plugin initialization (v3 ONLY)
 
 #### Example - fetch a list of active themes ####
 
