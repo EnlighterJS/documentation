@@ -205,6 +205,60 @@ function mm_ejs_title($title, $languageIdentifier, $languageName){
 add_filter('enlighter_codeblock_title', 'mm_ejs_title', 10, 3);
 ```
 
+FILTER::enlighter_editor_languages
+-----------------------------------------------
+
+**Description:** Filter to modify the internal language list of the editors
+
+#### Example 1 - Remove some Languages ####
+
+```php
 
 
+// add a custom filter to modify the language list
+add_filter('enlighter_editor_languages', function($langs){
+    // DEBUG: just display the dataset - uncomment the following line to debug issues
+    // echo '<pre>', print_r($langs, true), '</pre>';
 
+    unset($langs['java']);
+    unset($langs['javascript']);
+    return $langs;
+});
+```
+
+
+FILTER::enlighter_editor_themes
+-----------------------------------------------
+
+**Description:** Filter to modify the internal themes list of the editors
+
+#### Example 1 - Remove a Single Theme ####
+
+```php
+// add a custom filter to modify the theme list
+add_filter('enlighter_editor_themes', function($themes){
+    // DEBUG: just display the dataset - uncomment the following line to debug issues
+    // echo '<pre>', print_r($themes, true), '</pre>';
+
+    // unset the theme
+    unset($themes['godzilla']);
+
+    return $themes;
+});
+```
+
+FILTER::enlighter_editor_config
+-----------------------------------------------
+
+**Description:** Filter to editor config object
+
+#### Example 1 ####
+
+```php
+add_filter('enlighter_editor_config', function($config){
+    // DEBUG: just display the dataset - uncomment the following line to debug issues
+    // echo '<pre>', print_r($config, true), '</pre>';
+
+    return $config;
+});
+```
