@@ -50,3 +50,11 @@ Can Enlighter by disabled on selected pages?
 ----------------------------------------
 
 Of course, the filter hook [enlighter_startup](https://github.com/EnlighterJS/documentation/blob/master/wordpress/FilterHooks.md) can be used to terminate the plugin initialization
+
+Javascript Error "EnlighterJS resources not loaded yet!"
+----------------------------------------
+
+This issue is mostly caused by "optimization plugins" which are adding the attributes `async defer` to the script tag - this breaks the EnlighterJS initialization.
+Please exclude the EnlighterJS resources (`wp-content/plugins/enlighter/resources/*`) from any optimization plugins - the javascript files are already optimized!.
+
+btw. take a look into the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) what the attributes really cause (they break the execution ordering)
