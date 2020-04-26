@@ -21,3 +21,21 @@ add_filter('bbp_after_get_the_content_parse_args', function($args = array()){
     return $args;
 });
 ```
+
+Limit the set of themes visible to users in the frontend
+----------------------------------------------------------------
+
+Note: the users can stil manipulate the html tags manually - to avoid this you have to use custom KSES filters which respects internal ACLs
+
+```php
+add_filter('enlighter_editor_themes', function($themes){
+    // within backend ? just return full theme list
+    if (is_admin()){
+        return $themes;
+    }
+
+    // wthin frontend, return empty list - this will enforce the global standard theme for TinyMCE
+    return array(
+    );
+});
+```
