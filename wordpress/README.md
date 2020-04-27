@@ -1,7 +1,7 @@
 Enlighter WordPress Plugin
 =============================
 
-> The important things first: please use the **Visual Editor Plugin** or **Gutenberg** whenever possible
+> The most important thing first: please use the **Visual Editor Plugin** or **Gutenberg** whenever possible
 > **never ever use shortcodes** in the Visual Editor!
 > 
 > Shortcodes are designed to be used with the **Text Editor (HTML)** only!
@@ -29,6 +29,7 @@ Compatibility
 Documentation
 ---------------------------------
 
+* [External/Custom/Derived EnlighterJS Themes](ExternalThemes.md)
 * [Enlighter Plugin Notifications](PluginNotifications.md)
 * [Frequently Asked Questions](FAQ.md)
 
