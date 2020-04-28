@@ -58,3 +58,8 @@ This issue is mostly caused by "optimization plugins" which are adding the attri
 Please exclude the EnlighterJS resources (`wp-content/plugins/enlighter/resources/*`) from any optimization plugins - the javascript files are already optimized!.
 
 btw. take a look into the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) what the attributes really cause (they break the execution ordering)
+
+Highlighted sourcecode is only visible to logged-in users
+------------------------------------------------------------
+
+Such issue is related to caching plugins like WP Super Cache, W3 Total Cache or caching CDNs - after applying changes to your WordPress site (like installing a new plugin) you have to clear/purge the caches - otherwise the "old" content without the EnlighterJS codeblocks/resources will be used. Logged-in users (especially admin/manager roles) are excluded by most caching plugins.
