@@ -31,6 +31,7 @@ Prefix: **k**
 * **k8** | Type Qualifiers/Modifier
 * **k9** | Special Keywords
 * **k10** | Namespaces
+* **k11** | Annotations
 
 ### Expressions/Literals ###
 
