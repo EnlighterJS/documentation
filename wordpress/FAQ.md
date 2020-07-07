@@ -16,12 +16,12 @@ Enable the CodeColorer compatibility mode
 2. Select the filter targets (sections which should be converted) `Enlighter -> Compatibility -> Compatibility Mode -> Filter Targets`
 3. Enable CodeColorer compatibility filters: `Enlighter -> Compatibility -> CodeColorer -> enable`
 
-Can i use Enlighter togehter with Crayon ?
+Can I use Enlighter together with Crayon ?
 ----------------------------------------
 
 No, you can't use Enlighter together with the Crayon Syntax highlighter because it may take over the Enlighter elements.
 
-Should i use Shortcode`s or the Visual-Editor Integration (Gutenberg/Classic Editor) ?
+Should I use Shortcode`s or the Visual-Editor Integration (Gutenberg/Classic Editor) ?
 ----------------------------------------
 
 If possible, use the Gutenberg or Classic Editor mode! The use of Shortcode is only recommended when working in Text-Mode. By switching to the Visual-Editor-Mode whitespaces (linebreaks, indents, ..) within the shortcode will get removed by the editor - using Visual-Editor mode will avoid such problems.
