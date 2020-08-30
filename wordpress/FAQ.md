@@ -63,3 +63,12 @@ Highlighted sourcecode is only visible to logged-in users
 ------------------------------------------------------------
 
 Such issue is related to caching plugins like WP Super Cache, W3 Total Cache or caching CDNs - after applying changes to your WordPress site (like installing a new plugin) you have to clear/purge the caches - otherwise the "old" content without the EnlighterJS codeblocks/resources will be used. Logged-in users (especially admin/manager roles) are excluded by most caching plugins.
+
+Jetpack Markdown codeblocks not working
+------------------------------------------------------------
+
+To enable highlighting of markdown codeblocks created by the Jetpack plugin you have to follow these steps:
+
+1. Enable "Markdown" editing method within Enlighter Settings (Page Editing)
+2. Enable Jetpack markdown support within Enlighter Settings (Page Extensions -> Jetpack)
+3. Edit+Save the post/page written in markdown! This is required due to the fact that Jetpack applies the markdown rendering with the "on-save" action - the Enlighter extension just forces the markdown renderer to exclude codeblocks from rendering.
