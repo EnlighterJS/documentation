@@ -41,7 +41,7 @@ yarn install
 
 ### Start watch mode (development) ###
 
-EnlighterJS build environment comes with an embedded webserver (expressjs basesd) to serve the `Development.html` file.
+EnlighterJS build environment comes with an embedded webserver (expressjs basesd) to serve the [Development.html](Development.html) file - just copy the file into the EnlighterJS root directory.
 It is recommended to use this file to develope new themes, language support files or fixing bugs - just edit it.
 
 By starting the `gulp watch` mode, each modification of a file within the `src/` directory will re-trigger the build process. 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>EnlighterJS Playground</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
+
+    <!-- EnlighterJS Resources !-->
+    <link rel="stylesheet" href="enlighterjs.min.css" />
+
+    <style type="text/css">
+
+        body{
+        }
+        
+    </style>
+    <script type="text/javascript">
+        // init code - function called after footer
+        var _domready = (function(_window, _document){
+            
+        var options = {
+            language : 'php',
+            theme: 'droide', 
+            indent : 2,
+            linenumbers: true,
+            linehover: true,
+            textOverflow: 'break',
+            rawcodeDbclick: false,
+            cssClasses: "ultraspecialclass",
+            collapse: false,
+            toolbarOuter: '',
+            toolbarTop: '{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}',
+            toolbarBottom: ''
+        };
+
+        console.time('Rendering');
+        EnlighterJS.init('pre', null, options);
+        console.timeEnd('Rendering');
+    });
+    </script>
+</head>
+
+<body>
+
+<header>
+
+</header>
+
+<!-- Begin page content -->
+<article>
+    <div class="container">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">EnlighterJS</h1>
+            <h3 class="lead">an open source syntax highlighter written in pure javascript</h3>
+        </div>
+            
+        <h2>Inline-Content</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore <kbd>Javascript</kbd> <code class="special">window.addEvent('domready', async (a,b) => {});</code> magna aliquyam erat, 
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            <kbd>PHP</kbd> <code class="special" data-enlighter-language="php">$auth->setStorage(new SessionStorage('someNamespace'), $instance);</code>
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br /> Lorem ipsum dolor sit amet,
+        </p>
+
+<h2>Block-Content</h2>
+
+
+<pre data-enlighter-language="mylanguage">
+mylanguage
+</pre>
+
+
+   
+    </div><!-- // container -->
+</article>
+
+<footer>
+    <div class="container">
+        <p class="small text-center">EnlighterJS 3 development page</p>
+    </div>    
+</footer>
+
+<script type="text/javascript" src="enlighterjs.min.js"></script>
+<script type="text/javascript">
+    _domready.apply(window, [window, document]);
+</script>
+
+</body>
+</html>
