@@ -5,6 +5,8 @@ The Enlighter WordPress plugin comes with extended **github flavored markdown** 
 
 This is an optional feature which has to be enabled on the Enlighter Settings Page: `Enlighter -> Editing -> Markdown`
 
+Supported language identifier: [a full list can be found here](https://github.com/EnlighterJS/Plugin.WordPress/blob/master/modules/core/LanguageManager.php)
+
 Fenced Codeblocks
 -------------------------------------
 
