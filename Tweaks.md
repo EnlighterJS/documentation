@@ -118,3 +118,40 @@ To use custom fonts just override the `font-family` attribute of the theme wrapp
     font-family: "Ubuntu Mono", monospace;
 }
 ```
+
+## Set minimal height for single line codeblocks ##
+
+To use EnlighterJS blocks for single line code with enabled toolbar you have to enforce a minimal height.
+Otherwise parts of the toolbar maybe hidden.
+
+Background: the block mode is not designed for single line codes, use inline mode instead.
+
+### Example 1 - explicit height to a single-line container ###
+
+This is the recommended method but not supported by legacy browsers [reference](https://developer.mozilla.org/de/docs/Web/CSS/:only-child)
+
+```less
+// set an explicit height to the first line (only if the container contains one element)
+.enlighter-t-godzilla div.enlighter > div:only-child{
+    height: 50px;
+}
+```
+
+### Example 2 - padding ###
+
+```less
+// we apply a padding outer container
+.enlighter-t-godzilla{
+    padding: 10px;
+}
+```
+
+### Example 3 - min-height ###
+
+```less
+// set a min-height on outer container
+.enlighter-t-godzilla{
+    min-height: 50px;
+}
+```
+
