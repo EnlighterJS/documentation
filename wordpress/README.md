@@ -17,6 +17,12 @@ Editing
 * [Enlighter Shortcode Usage](../editing/Shortcode.md) - Howto add Code Snippets to your posts and pages
 * [Enlighter Visual Editor Live-Demo](https://tinymce.enlighterjs.org/)
 
+Common issues and troubleshooting
+---------------------------------
+
+* [Troubleshooting](Troubleshooting.md)
+* [Frequently Asked Questions](FAQ.md)
+
 Third Party Plugins
 ---------------------------------
 
@@ -33,6 +39,7 @@ Documentation
 * [External/Custom/Derived EnlighterJS Themes](ExternalThemes.md)
 * [Enlighter Plugin Notifications](PluginNotifications.md)
 * [Frequently Asked Questions](FAQ.md)
+
 
 WordPress Developers
 ---------------------------------
