@@ -5,6 +5,17 @@ Tweaks + Advanced Settings
 
 You can change all CSS related options globally via `.enlighter-default` class (added to all containers) or on per theme basis by using the specific `.enlighter-t-<themename>` classes.
 
+## Important Notes ##
+
+### General ###
+
+* The following examples are written in [less](http://lesscss.org/) - you need to compile it into css - they **cannot be used directly within your theme**
+
+### WordPress Users ###
+
+* Disable DRI when applying overrides to the themes - otherwise some style will take presendence (or use the `!important` directive)
+* It's strongly recommended to use external (custom) themes when applying modifications!!!
+
 ## Hide Toolbar Buttons ##
 
 Compared to the previous releases there are no additional options available to disable/hide single toolbar buttons, use CSS instead!
@@ -66,6 +77,14 @@ Do you want to replace the toolbar icons or change the text labels ?
 ```less
 // override theme settings
 .enlighter-t-godzilla{
+
+    // hide toolbar icons, reset fixed button dimensions
+    .enlighter-toolbar .enlighter-btn{
+        background-image: none;
+        width: auto;
+        height: auto;
+    }
+
     // toolbar buttons
     .enlighter-btn-raw{
         &::after{
