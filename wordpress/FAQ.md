@@ -72,3 +72,7 @@ To enable highlighting of markdown codeblocks created by the Jetpack plugin you 
 1. Enable "Markdown" editing method within Enlighter Settings (Page Editing)
 2. Enable Jetpack markdown support within Enlighter Settings (Page Extensions -> Jetpack)
 3. Edit+Save the post/page written in markdown! This is required due to the fact that Jetpack applies the markdown rendering with the "on-save" action - the Enlighter extension just forces the markdown renderer to exclude codeblocks from rendering.
+
+Escape Shortcodes
+------------------------------------------------------------
+If you want to use shortcodes (as sourcecode) within an Enlighter codeblock don't forget to [escape the square brackets](https://codex.wordpress.org/Shortcode_API#Escaping) using double brackets `[[shortcode]]`
