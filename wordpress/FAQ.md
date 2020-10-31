@@ -76,3 +76,8 @@ To enable highlighting of markdown codeblocks created by the Jetpack plugin you 
 Escape Shortcodes
 ------------------------------------------------------------
 If you want to use shortcodes (as sourcecode) within an Enlighter codeblock don't forget to [escape the square brackets](https://codex.wordpress.org/Shortcode_API#Escaping) using double brackets `[[shortcode]]`
+
+
+Double hyphens (––) are converted to dashes (–)
+------------------------------------------------------------
+This is common issue but not related to Enlighter: the [wptexturize](https://developer.wordpress.org/reference/functions/wptexturize/) filter seems to be activated by another plugin or your theme.
