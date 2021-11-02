@@ -210,6 +210,7 @@ EnlighterJS.enlight(myElement, {
 * Default: `break`
 * Scope: `view:standard,codegroup`
 * Operation: css flag
+* Values: [`scroll`, `break`]
 
 **Example 1**
 
