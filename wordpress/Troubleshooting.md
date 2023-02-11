@@ -1,13 +1,13 @@
 Common issues and troubleshooting
 =======================================
 
-[Enlighter WordPress Plugin](README.md) | [WordPress realted FAQ](FAQ.md) | [EnlighterJS Visual Tweaks](/EnlighterJS/documentation/blob/master/Tweaks.md)
+[Enlighter WordPress Plugin](README.md) | [WordPress related FAQ](FAQ.md) | [EnlighterJS Visual Tweaks](../Tweaks.md)
 ________
 
 Initial troubleshooting
 ---------------------------------
 
-First of all, make shure that your issue is not caused by any third party plugins or your WordPress theme.
+First of all, make sure that your issue is not caused by any third party plugins or your WordPress theme.
 
 Technically this should be done by reproducing the issue within a clean WordPress environment (e.g. spin up a container). Or you can follow this step-by-step guide:
 
